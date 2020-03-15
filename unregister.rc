@@ -1,0 +1,64 @@
+#include <windows.h>
+
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+
+// The applications main icon
+//IDI_ICON1 ICON DISCARDABLE "icon.ico"
+
+LANGUAGE LANG_RUSSIAN, SUBLANG_NEUTRAL
+
+1 VERSIONINFO
+FILEVERSION 0,1,0,0
+PRODUCTVERSION 0,1,0,0
+FILETYPE VFT_APP
+{
+    BLOCK "StringFileInfo"
+    {
+        BLOCK "041904E4"
+        {
+            VALUE "CompanyName", "MegaFox"
+            VALUE "FileVersion", "0.1"
+            VALUE "FileDescription", "Инструмент для отмены регистрации PATH"
+            VALUE "InternalName", "Unregister"
+            VALUE "LegalCopyright", "© 2020 - MegaFox"
+            VALUE "LegalTrademarks", "Unregister"
+            VALUE "ProductName", "Unregister"
+            VALUE "ProductVersion", "0.1"
+        }
+    }
+
+    BLOCK "VarFileInfo"
+    {
+        VALUE "Translation", 0x0419, 0x04E4
+    }
+}
+
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+
+1 VERSIONINFO
+FILEVERSION 0,1,0,0
+PRODUCTVERSION 0,1,0,0
+FILETYPE VFT_APP
+{
+    BLOCK "StringFileInfo"
+    {
+        BLOCK "100904E4"
+        {
+            VALUE "CompanyName", "MegaFox"
+            VALUE "FileVersion", "0.1"
+            VALUE "FileDescription", "PATH unregistration tool"
+            VALUE "InternalName", "Unregister"
+            VALUE "LegalCopyright", "© 2020 - MegaFox"
+            VALUE "LegalTrademarks", "Unregister"
+            VALUE "ProductName", "Unregister"
+            VALUE "ProductVersion", "0.1"
+        }
+    }
+
+    BLOCK "VarFileInfo"
+    {
+        VALUE "Translation", 0x1009, 0x04E4
+    }
+}
+
+1 24 "unregister.exe.manifest"

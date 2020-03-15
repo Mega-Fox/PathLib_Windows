@@ -1,4 +1,4 @@
-MIT License
+/*MIT License
 
 Copyright (c) 2020 by MegaFox
 
@@ -18,4 +18,41 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+SOFTWARE.*/
+
+#ifndef PATHLIB_HPP
+#define PATHLIB_HPP
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#ifdef BUILDING_PATHLIB
+#define PATHLIB __declspec(dllexport)
+#else
+#define PATHLIB __declspec(dllimport)
+#endif
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string>
+
+using namespace std;
+
+PATHLIB wstring __cdecl pathLibLicense();
+PATHLIB int __cdecl pathLibRegisterSystem(wstring curdir);
+PATHLIB int __cdecl pathLibUnregisterSystem(wstring curdir);
+PATHLIB int __cdecl pathLibRegisterUser(wstring curdir);
+PATHLIB int __cdecl pathLibUnregisterUser(wstring curdir);
+PATHLIB int __cdecl pathLibRegisterSystemComp(wchar_t *curdir);
+PATHLIB int __cdecl pathLibUnregisterSystemComp(wchar_t *curdir);
+PATHLIB int __cdecl pathLibRegisterUserComp(wchar_t *curdir);
+PATHLIB int __cdecl pathLibUnregisterUserComp(wchar_t *curdir);
+
+#ifdef __cplusplus
+}
+#endif
+
+
+
+#endif  // PATHLIB_HPP

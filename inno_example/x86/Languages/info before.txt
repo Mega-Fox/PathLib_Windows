@@ -1,0 +1,3 @@
+PATH registration library by MegaFox (http://4pda.ru/forum/index.php?showuser=4964705)
+
+This installer example demonstrates my library to register/unregister a folder in PATH variable.
